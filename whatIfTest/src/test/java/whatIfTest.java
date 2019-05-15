@@ -20,13 +20,19 @@ public class whatIfTest {
     public void whatIfTest_M() {
 
         //Positive Paths
+        System.out.println("APPL");
         TestSymbol("AAPL");
+        System.out.println("HD");
         TestSymbol("HD");
+        System.out.println("MSFT");
         TestSymbol("MSFT");
+        System.out.println("FB");
         TestSymbol("FB");
 
         //Negative Path
+        System.out.println("Test1");
         TestNegativePath("Test1");
+        System.out.println("Test2");
         TestNegativePath("Test2");
 
 
