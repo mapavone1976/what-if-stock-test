@@ -57,7 +57,7 @@ public class whatIfTest {
                 throw new IOException("You don have permissions to see the symbol " + xSymbol);
             }
 
-            InputStreamReader readerCSV = new InputStreamReader(response.asInputStream()) ;
+            InputStreamReader readerCSV = new InputStreamReader(response.asInputStream());
 
             // create csvParser and CSVReader objects
             CSVParser parser = new CSVParserBuilder().withSeparator(',').build();
@@ -96,8 +96,6 @@ public class whatIfTest {
                     assertThat().body("high.price", equalTo(sMaxValue) ).
                     assertThat().body("low.date", equalTo( sMinDate) ).
                     assertThat().body("low.price", equalTo( sMinValue) );
-
-
         }
         catch (Exception e) {
             e.printStackTrace();
